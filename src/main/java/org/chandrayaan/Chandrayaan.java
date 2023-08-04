@@ -16,4 +16,7 @@ public class Chandrayaan {
         this.z = z_coord;
         this.direction = intialDirection;
     }
+
+    public void finalDirection(char[] commands) {
+    }
 }
