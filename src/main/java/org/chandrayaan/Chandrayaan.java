@@ -37,10 +37,36 @@ public class Chandrayaan {
     }
 
     private void goForward() {
-        y++;
+        switch (direction) {
+            case 'N':
+                y++;
+                break;
+            case 'S':
+                y--;
+                break;
+            case 'E':
+                x++;
+                break;
+            case 'W':
+                x--;
+                break;
+        }
     }
 
     private void goRight(){
-        direction = 'E';
+        switch (direction) {
+            case 'N':
+                direction = 'E';
+                break;
+            case 'S':
+                direction = 'W';
+                break;
+            case 'E':
+                direction = 'S';
+                break;
+            case 'W':
+                direction = 'N';
+                break;
+        }
     }
 }
