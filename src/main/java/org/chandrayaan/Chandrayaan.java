@@ -31,12 +31,38 @@ public class Chandrayaan {
                 case 'l':
                     goLeft();
                     break;
+                case 'b':
+                    goBackward();
+                    break;
             }
         }
 
         finalLocation += Integer.toString(x) + "," + Integer.toString(y) + "," + Integer.toString(z) + "," + direction + ")";
 
         return finalLocation;
+    }
+
+    private void goBackward() {
+        switch (direction) {
+            case 'N':
+                y--;
+                break;
+            case 'S':
+                y++;
+                break;
+            case 'E':
+                x--;
+                break;
+            case 'W':
+                x++;
+                break;
+            case 'U':
+                z--;
+                break;
+            case 'D':
+                z++;
+                break;
+        }
     }
 
     private void goForward() {
