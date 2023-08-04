@@ -28,6 +28,9 @@ public class Chandrayaan {
                 case 'r':
                     goRight();
                     break;
+                case 'l':
+                    goLeft();
+                    break;
             }
         }
 
@@ -66,6 +69,23 @@ public class Chandrayaan {
                 break;
             case 'W':
                 direction = 'N';
+                break;
+        }
+    }
+
+    private void goLeft() {
+        switch (direction) {
+            case 'N':
+                direction = 'W';
+                break;
+            case 'S':
+                direction = 'E';
+                break;
+            case 'E':
+                direction = 'N';
+                break;
+            case 'W':
+                direction = 'S';
                 break;
         }
     }

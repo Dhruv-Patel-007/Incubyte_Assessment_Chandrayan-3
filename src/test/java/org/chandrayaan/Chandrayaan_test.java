@@ -30,4 +30,11 @@ public class Chandrayaan_test {
         assertEquals(result, chandrayaan.finalDirection(commands));
     }
 
+    @Test
+    public void testLeftfromNorthChangesDirectionToWest(){
+        char[] commands = new char[] {'l'};
+        String result = "(0,0,0,W)";
+        assertEquals(result, chandrayaan.finalDirection(commands));
+    }
+
 }
