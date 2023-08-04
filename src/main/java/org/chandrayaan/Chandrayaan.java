@@ -53,6 +53,12 @@ public class Chandrayaan {
             case 'W':
                 x--;
                 break;
+            case 'U':
+                z++;
+                break;
+            case 'D':
+                z--;
+                break;
         }
     }
 
@@ -70,6 +76,12 @@ public class Chandrayaan {
             case 'W':
                 direction = 'N';
                 break;
+            case 'U':
+                direction = 'W';
+                break;
+            case 'D':
+                direction = 'E';
+                break;
         }
     }
 
@@ -86,6 +98,12 @@ public class Chandrayaan {
                 break;
             case 'W':
                 direction = 'S';
+                break;
+            case 'U':
+                direction = 'W';
+                break;
+            case 'D':
+                direction = 'E';
                 break;
         }
     }
