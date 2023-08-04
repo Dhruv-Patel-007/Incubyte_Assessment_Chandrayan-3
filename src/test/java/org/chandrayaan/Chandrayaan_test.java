@@ -61,4 +61,11 @@ public class Chandrayaan_test {
         assertEquals(result, chandrayaan.finalDirection(commands));
     }
 
+    @Test
+    public void testFinalDirection(){
+        char[] commands = new char[] {'f','r', 'u', 'b', 'l'};
+        Chandrayaan chandrayan = new Chandrayaan(0, 0, 0, 'N');
+        String result = "(0,1,-1,W)";
+        assertEquals(result, chandrayaan.finalDirection(commands));
+    }
 }
