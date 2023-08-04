@@ -10,6 +10,10 @@ public class Chandrayaan_test {
         Chandrayaan chandrayan = new Chandrayaan(0, 0, 0, 'N');
     }
 
-
+    @Test
+    public void testPassingDirectionCommands(){
+        char[] commands = new char[] {'f', 'r', 'u', 'b', 'l'};
+        chandrayaan.finalDirection(commands);
+    }
 
 }
