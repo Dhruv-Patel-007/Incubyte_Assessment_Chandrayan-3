@@ -19,7 +19,17 @@ public class Chandrayaan {
 
     public String finalDirection(char[] commands) {
         String finalLocation = "(";
-        goForward();
+
+        for (char command : commands) {
+            switch (command) {
+                case 'f':
+                    goForward();
+                    break;
+                case 'r':
+                    goRight();
+                    break;
+            }
+        }
 
         finalLocation += Integer.toString(x) + "," + Integer.toString(y) + "," + Integer.toString(z) + "," + direction + ")";
 
@@ -28,5 +38,9 @@ public class Chandrayaan {
 
     private void goForward() {
         y++;
+    }
+
+    private void goRight(){
+        direction = 'E';
     }
 }

@@ -23,4 +23,11 @@ public class Chandrayaan_test {
         assertEquals(result, chandrayaan.finalDirection(commands));
     }
 
+    @Test
+    public void testRightFromNorthChangesDirectionToEast(){
+        char[] commands = new char[] {'r'};
+        String result = "(0,0,0,E)";
+        assertEquals(result, chandrayaan.finalDirection(commands));
+    }
+
 }
