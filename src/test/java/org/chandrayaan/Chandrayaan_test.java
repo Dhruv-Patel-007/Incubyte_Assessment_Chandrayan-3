@@ -45,4 +45,20 @@ public class Chandrayaan_test {
         assertEquals(result, chandrayaan.finalDirection(commands));
     }
 
+    @Test
+    public void testUpCommand(){
+        char[] commands = new char[] {'u'};
+        Chandrayaan chandrayan = new Chandrayaan(0, 0, 0, 'N');
+        String result = "(0,0,0,U)";
+        assertEquals(result, chandrayaan.finalDirection(commands));
+    }
+
+    @Test
+    public void testDownCommand(){
+        char[] commands = new char[] {'d'};
+        Chandrayaan chandrayan = new Chandrayaan(0, 0, 0, 'N');
+        String result = "(0,0,0,D)";
+        assertEquals(result, chandrayaan.finalDirection(commands));
+    }
+
 }
