@@ -16,4 +16,11 @@ public class Chandrayaan_test {
         chandrayaan.finalDirection(commands);
     }
 
+    @Test
+    public void testForwardIncrementsYBy1(){
+        char[] commands = new char[] {'f'};
+        String result = "(0,1,0,N)";
+        assertEquals(result, chandrayaan.finalDirection(commands));
+    }
+
 }

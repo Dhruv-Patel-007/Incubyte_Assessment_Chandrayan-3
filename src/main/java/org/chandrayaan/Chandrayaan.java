@@ -17,6 +17,16 @@ public class Chandrayaan {
         this.direction = intialDirection;
     }
 
-    public void finalDirection(char[] commands) {
+    public String finalDirection(char[] commands) {
+        String finalLocation = "(";
+        goForward();
+
+        finalLocation += Integer.toString(x) + "," + Integer.toString(y) + "," + Integer.toString(z) + "," + direction + ")";
+
+        return finalLocation;
+    }
+
+    private void goForward() {
+        y++;
     }
 }
